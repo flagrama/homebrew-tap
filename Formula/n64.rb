@@ -24,10 +24,10 @@ class N64 < Formula
       -I#{HOMEBREW_PREFIX}/include\
       -L#{HOMEBREW_PREFIX}/lib"
     
-    ENV["BINUTILS_VERSION"] = "2.45.1"
-		ENV["GCC_VERSION"] = "15.2.0"
-		ENV["NEWLIB_VERSION"] = "4.6.0.20260123"
-		ENV["GDB_VERSION"] = "17.1"
+	ENV["BINUTILS_VERSION"] = "binutils-2.45.1"
+	ENV["GCC_VERSION"] = "gcc-15.2.0"
+	ENV["NEWLIB_VERSION"] = "newlib-4.6.0.20260123"
+	ENV["GDB_VERSION"] = "gdb-17.1"
     
     ENV.prepend_path "PATH", Formula["gnu-sed"].libexec/"gnubin"
 
